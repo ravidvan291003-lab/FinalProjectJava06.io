@@ -161,13 +161,6 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
             <ShoppingCart className="w-3.5 h-3.5 mr-1.5" />
             Launch POS Register
           </button>
-          <button
-            onClick={() => onNavigate('java_architecture')}
-            className="inline-flex items-center px-3.5 py-2 border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-semibold rounded-lg shadow-2xs transition-colors"
-          >
-            <TrendingUp className="w-3.5 h-3.5 mr-1.5 text-indigo-600" />
-            Architecture Flow & Code
-          </button>
         </div>
       </div>
 

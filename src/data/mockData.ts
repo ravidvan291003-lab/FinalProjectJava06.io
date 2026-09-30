@@ -3,7 +3,7 @@ import { Category, Product, Customer, User, Sale, StockLog } from '../types';
 export const INITIAL_USERS: User[] = [
   {
     id: 'usr-1',
-    name: 'Alexandra Vance',
+    name: 'Ravid Van',
     email: 'admin@company.com',
     role: 'ADMIN',
     status: 'ACTIVE',
@@ -12,7 +12,7 @@ export const INITIAL_USERS: User[] = [
   },
   {
     id: 'usr-2',
-    name: 'Marcus Sterling',
+    name: 'Phoeung Panha',
     email: 'manager@company.com',
     role: 'MANAGER',
     status: 'ACTIVE',
@@ -21,7 +21,16 @@ export const INITIAL_USERS: User[] = [
   },
   {
     id: 'usr-3',
-    name: 'Elena Rostova',
+    name: 'Ray Chanra',
+    email: 'cashier@company.com',
+    role: 'CASHIER',
+    status: 'ACTIVE',
+    phone: '+1 (555) 345-6789',
+    lastLogin: '2026-09-08 10:02 AM',
+  },
+  {
+    id: 'usr-4',
+    name: 'Oul Phanarith',
     email: 'cashier@company.com',
     role: 'CASHIER',
     status: 'ACTIVE',

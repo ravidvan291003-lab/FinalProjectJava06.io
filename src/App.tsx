@@ -24,7 +24,6 @@ import {
   BarChart3,
   Boxes,
   ShieldCheck,
-  Code2,
   Bell,
   LogOut,
   UserCheck,
@@ -103,7 +102,6 @@ export default function App() {
     { id: 'sales_history' as AppView, label: 'Sales History', icon: Receipt, roles: ['ADMIN', 'MANAGER', 'CASHIER'] },
     { id: 'reports' as AppView, label: 'Reports', icon: BarChart3, roles: ['ADMIN', 'MANAGER'] },
     { id: 'users' as AppView, label: 'User Roles', icon: ShieldCheck, roles: ['ADMIN'] },
-    { id: 'java_architecture' as AppView, label: 'Java & JSP Architecture', icon: Code2, roles: ['ADMIN', 'MANAGER', 'CASHIER'], special: true },
   ];
 
   return (
@@ -132,16 +130,6 @@ export default function App() {
                 </div>
               </button>
 
-              {/* Java/JSP Quick Tag */}
-              <button
-                id="header-java-tag-btn"
-                onClick={() => setCurrentView('java_architecture')}
-                className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-full bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 transition-colors"
-                title="View Java EE / JSP Architecture & MySQL Schema"
-              >
-                <Code2 className="w-3.5 h-3.5 text-amber-600" />
-                Java / JSP / MySQL Backend
-              </button>
             </div>
 
             {/* Right Controls: User Profile, Session, Alerts */}
@@ -222,13 +210,9 @@ export default function App() {
                     }}
                     className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all ${
                       isActive
-                        ? item.special
-                          ? 'bg-amber-600 text-white shadow-xs'
-                          : 'bg-indigo-600 text-white shadow-xs'
+                        ? 'bg-indigo-600 text-white shadow-xs'
                         : isAllowed
-                        ? item.special
-                          ? 'text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200'
-                          : item.highlight
+                        ? item.highlight
                           ? 'text-indigo-600 bg-indigo-50 hover:bg-indigo-100'
                           : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
                         : 'text-slate-300 cursor-not-allowed'

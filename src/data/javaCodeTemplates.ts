@@ -188,9 +188,9 @@ CREATE TABLE IF NOT EXISTS \`stock_logs\` (
 
 -- Initial Seed Data
 INSERT INTO \`users\` (\`username\`, \`password_hash\`, \`full_name\`, \`email\`, \`role\`) VALUES
-('admin', 'admin123', 'Alexandra Vance', 'admin@company.com', 'ADMIN'),
-('manager', 'manager123', 'Marcus Sterling', 'manager@company.com', 'MANAGER'),
-('cashier', 'cashier123', 'Elena Rostova', 'cashier@company.com', 'CASHIER');
+('admin', 'admin123', 'Van Ravid', 'admin@company.com', 'ADMIN'),
+('manager', 'manager123', 'Phoeung Panha', 'manager@company.com', 'MANAGER'),
+('cashier', 'cashier123', 'Ray Chanra', 'cashier@company.com', 'CASHIER');
 
 INSERT INTO \`categories\` (\`code\`, \`name\`, \`description\`, \`color\`) VALUES
 ('BEV', 'Beverages & Drinks', 'Cold sodas, coffees, teas, sparkling waters', '#3B82F6'),
